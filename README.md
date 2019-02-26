@@ -31,3 +31,7 @@
 Reference Book:
 
 - Operating Systems Design & Implementation A.S. Tanenbaum, etc. ISBN-10: 0136386776 Prentice Hall
+
+# FAQ
+
+[**常问问题**](./faq)
