@@ -10,6 +10,7 @@
 
 ## Announcements
 
+- Feb 27, 2019: **课程交流 QQ 群：546714393 （[二维码](images/QQ.jpg)）**
 - Feb 27, 2019: **Welcome to Operating Systems (H)!**
 
 ## Assignments
