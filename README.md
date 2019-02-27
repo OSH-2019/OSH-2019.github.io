@@ -6,7 +6,6 @@
 - Classroom: **3A409**
 - Instructor: [**邢凯**](mailto:kxing@ustc.edu.cn)
 - Teaching Assistants: [**何纪言**](mailto:hejiyan@mail.ustc.edu.cn)、[**李子天**](mailto:lizitian@mail.ustc.edu.cn)、[**高一凡**](mailto:os@yfgao.com)
-- Textbook: **Operating System Concepts Silberschatz, Galvin, Gagne. ISBN-10:0470128720 Wiley**
 
 ## Announcements
 
@@ -30,6 +29,7 @@
 
 Reference Book:
 
+- Operating System Concepts Silberschatz, Galvin, Gagne. ISBN-10:0470128720 Wiley
 - Operating Systems Design & Implementation A.S. Tanenbaum, etc. ISBN-10: 0136386776 Prentice Hall
 
 ## FAQ
