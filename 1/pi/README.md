@@ -10,7 +10,7 @@
 cd ~
 mkdir lab
 cd lab
-git clone https://github.com/raspberrypi/tools ~/lab/tools
+git clone --depth=1 https://github.com/raspberrypi/tools ~/lab/tools
 ```
 
 然后将工具链二进制文件夹的路径写入环境变量 PATH 中，以方便之后的使用，以 bash 为例：
