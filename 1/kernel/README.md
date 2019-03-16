@@ -105,9 +105,10 @@ sudo mount | grep /dev/sdc
 
 如果这条命令有输出，则需要手动 `umount` 。
 
-然后使用我们提供好的磁盘镜像，以避免自行分区的工作，这个磁盘镜像只缺少你即将安装的内核（`kernel7.img`），即可自动运行助教写好的 init 程序。
+然后使用我们提供好的磁盘镜像（[lab1.img](https://github.com/OSH-2019/OSH-2019.github.io/raw/master/1/resources/lab1.img)），以避免自行分区的工作，这个磁盘镜像只缺少你即将安装的内核（`kernel7.img`），即可自动运行助教写好的 init 程序。
 
 ```bash
+wget https://github.com/OSH-2019/OSH-2019.github.io/raw/master/1/resources/lab1.img
 sudo dd if=lab1.img of=/dev/sdc bs=2M status=progress
 ```
 
