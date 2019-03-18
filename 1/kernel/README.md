@@ -121,7 +121,7 @@ sudo fdisk -l /dev/sdc
 输出应该和以下非常类似：
 
 ```
-Disk /dev/sdg: 119.1 GiB, 127865454592 bytes, 249737216 sectors
+Disk /dev/sdc: 119.1 GiB, 127865454592 bytes, 249737216 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
@@ -129,8 +129,8 @@ Disklabel type: dos
 Disk identifier: 0x7ee80803
 
 Device     Boot Start    End Sectors  Size Id Type
-/dev/sdg1        8192  98045   89854 43.9M  c W95 FAT32 (LBA)
-/dev/sdg2       98304 118783   20480   10M 83 Linux
+/dev/sdc1        8192  98045   89854 43.9M  c W95 FAT32 (LBA)
+/dev/sdc2       98304 118783   20480   10M 83 Linux
 ```
 
 检查之后，将编译好的内核复制到 SD 卡中：
