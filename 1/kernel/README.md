@@ -157,6 +157,8 @@ sudo umount mnt/fat32
 
 完成实验后，你可以从以下问题中选取一些进行探究：
 
+（假设 SD 卡的第一个分区为 `/dev/sdc`，第二个分区为 `/dev/sdc2`）
+
 - `/dev/sdc1` 中除了 `kernel7.img` 以外的文件哪些是重要的？他们的作用是什么？
 - `/dev/sdc1` 中用到了什么文件系统，为什么？可以换成其他的吗？
 - `/dev/sdc1` 中的 kernel 启动之后为什么会加载 `/dev/sdc2` 中的 `init` 程序？
