@@ -9,6 +9,7 @@
 
 ## Announcements
 
+- Mon 18, 2019: **请各组根据[文档](./x)创建大作业仓库**
 - Feb 27, 2019: **课程交流 QQ 群：546714393 （[二维码](images/QQ.jpg)）**
 - Feb 27, 2019: **Welcome to Operating Systems (H)!**
 
