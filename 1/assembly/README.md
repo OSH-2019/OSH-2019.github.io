@@ -137,8 +137,6 @@ sudo umount mnt/fat32
   @ other code
   ```
   
-  请自行查阅参考资料中的手册，得知 System Timer 的计数频率。
-
 将新的汇编代码保存为 `led.s`，并且使用类似的命令汇编、装载。
 
 ```bash
