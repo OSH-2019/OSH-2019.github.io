@@ -6,7 +6,7 @@
 
 **Q1: (Lab1-2) 执行 `sudo mount | grep /dev/sdc` 命令发现有输出，怎样 `umount`？**
 
-A1: 通过 `man umount` 可以看到这个命令的详细用法，或者查看 Linux umount命令: http://www.runoob.com/linux/linux-comm-umount.html
+A1: 通过 `man umount` 可以看到这个命令的详细用法，或者查看 http://www.runoob.com/linux/linux-comm-umount.html
 
 
 
