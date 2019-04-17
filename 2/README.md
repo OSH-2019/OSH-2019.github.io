@@ -40,7 +40,7 @@ gcc -static -o sh shell.c
 
 ## 支持基本的文件重定向
 
-形如 ls > out.txt 会将 ls 命令的输出重定向到 out.txt 文件中，具体地说，会将文件描述符 STDOUT_FILENO 关联的文件更改为 out.txt，然后再运行相应的命令。
+形如 ls > out.txt 会将 ls 命令的输出重定向到 out.txt 文件中，具体地说，会将 out.txt 关联到文件描述符 STDOUT_FILENO ，然后再运行相应的命令。
 
 类似的， ls >> out.txt 会将输出追加（而不是覆盖）到 out.txt 文件， cat < in.txt 会将程序的标准输入重定向为文件 in.txt。
 
@@ -60,7 +60,7 @@ EOF
 ```
 上述程序会将"this\noutput\n"作为标准输入重定向给 cmd。请实现这种重定向方式。
 
-cmd <<< text 会将"text"作为标准输入重定向给 cmd。请事先这种重定向方式。
+cmd <<< text 会将"text\n"作为标准输入重定向给 cmd。请事先这种重定向方式。
 
 ## 更多功能（选做）
 
@@ -69,12 +69,11 @@ cmd <<< text 会将"text"作为标准输入重定向给 cmd。请事先这种重
 ```Shell
 echo $PATH
 A=1 env
-cat >doc.txt <<EOF
-This is some words.
-EOF
 alias ll='ls -l'
 echo ~
+echo ~root
 (sleep 10; echo aha) &
+if true; then ls; fi
 ```
 
 ## 示例程序
