@@ -70,7 +70,7 @@ Hello from Python Server
 
 第一行是 HTTP 请求行，`GET` 代表 HTTP 方法，向指定的资源发出“显示”请求；`/hello.html` 为请求的资源路径；`HTTP/1.0` 为请求的协议版本。
 
-接下来的行是请求行，`Host: 127.0.0.1:8000` 指明了请求的 Host，服务器的域名(用于虚拟主机 )，以及服务器所监听的传输控制协议端口号。
+接下来的行是请求行，`Host: 127.0.0.1:8000` 指明了请求的 Host，服务器的域名，以及服务器所监听的传输控制协议端口号。
 
 注意，最后还有一个空行，这是不可省略的。
 
@@ -93,7 +93,7 @@ Hello from Python Server
 500 Internal Server Error 本实验中未定义的各种错误。
 ```
 
-接下来的行为响应头，其中 `Content-Length` 为回应消息体的长度，以 字节 （8位为一字节）为单位。
+接下来的行为响应头，其中 `Content-Length` 为回应消息体的长度，以字节为单位。
 
 接着是一个空行，这是不可省略的。
 
@@ -318,6 +318,7 @@ ssize_t read(int fd, void *buf, size_t nbytes);
 注意：
 
 - 资源文件根目录为程序运行时的当前目录；
+- 返回头仅要求完成  `Content-Length`；
 - 当请求的资源（文件）不存在时，可以返回 `404 Not Found`；
 - 当出现其他错误时，可以返回 `500 Internal Server Error`；
 
