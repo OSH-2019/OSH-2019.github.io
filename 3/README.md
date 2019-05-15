@@ -313,7 +313,10 @@ ssize_t read(int fd, void *buf, size_t nbytes);
 
 真正的 HTTP Server 会尝试返回用户请求的资源内容（文件内容），请参考 Python Server 的行为，实现这一部分内容。
 
-例如：请求的资源路径是 `/index.html` 则尝试返回当前运行目录下的 `index.html` 文件的内容。
+例如：
+
+- 请求的资源路径是 `/index.html` 则尝试返回当前运行目录下的 `index.html` 文件的内容；
+- 请求的资源路径是一个目录，则返回 500 错误；
 
 注意：
 
