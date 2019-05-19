@@ -28,6 +28,10 @@ A5: 不需要，返回 `500` 错误即可。
 
 A6：70% 的测试数据中资源文件总大小不超过 1MiB，另外 30% 测试数据中不做假设。
 
+**Q7: 为什么重启 server 之后会连接失败？**
+
+A7: 这个问题和 socket 没有正确关闭有关，在出现这个问题时，可能通过 `sudo netstat -naop4 | grep 8000` 看到处于 timewait 状态的 IPv4 的 TCP 连接以及回收需要等待的时间（默认是 60s，可以 `cat /proc/sys/net/ipv4/tcp_tw_recycle` 查看），在此期间，因为示例程序没有设置任何 reuse 选项，新启动的程序未能成功 `bind`，故无法收到请求。**在调试开发期间**，为了避免这个问题，可以暂时将 timewait 的回收时间 `tcp_tw_recycle` 改为一个较小的值，如：`sudo sh -c 'echo 1 > /proc/sys/net/ipv4/tcp_tw_recycle'`，这一改动在重启后会失效。
+
 ## Lab2
 
 **Q1: 可以使用哪些编程语言？**
