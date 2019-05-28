@@ -33,7 +33,7 @@
 | #2   | - | [大作业-调研报告](./x/) | 23:00, Sunday, Mar 31 |
 | #3   | - | [大作业-可行性报告](./x/) | 23:00, Tuesday, Apr 9 |
 | #4   | Apr 17 | [Lab2](./2/) | 23:00, Saturday, May 4 |
-| #5   | May 15 | [Lab3](./3/) | 23:00, Wednesday, May 28 |
+| #5   | May 15 | [Lab3](./3/) | 23:00, Wednesday, May 29 |
 
 ## Resources
 
